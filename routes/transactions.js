@@ -22,7 +22,7 @@ router.get('/', async function (req, res, next) {
                 data: transactions
             });
         } else {
-            res.status(404).json({ message: 'No transactions found' });
+            res.status(404).json({ message: 'No transactions found!' });
         }
     } catch (e) {
         console.error(e);
